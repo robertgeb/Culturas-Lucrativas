@@ -1,3 +1,9 @@
+Feito por:
+
+  * Elton Silva
+
+  * Robert Gebhardt
+
 ### Instruções
 
     $ git clone // Clone
