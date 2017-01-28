@@ -6,7 +6,7 @@ Feito por:
 
 ### Instruções
 
-    $ git clone // Clone
+    $ git clone https://github.com/robertgeb/Culturas-Lucrativas.git // Clone
     // Modifique as constantes do arquivo culturasLucrativas.h se quiser
     $ make // Compile
     $ ./culturasLucrativas // Execute
