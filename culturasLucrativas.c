@@ -105,7 +105,7 @@ double classificarIndividuo(char* individuo, char* individuoAnterior){
   valorIndividuo = individuoDec*10;
 
   // Se não houve individuo anterior
-  if (individuoAnterior == 0) {
+  if (individuoAnteriorDec == 0) {
     return valorIndividuo;
   }
 
@@ -152,7 +152,8 @@ char** roletarIndividuos(char** populacao, char** populacaoAnterior, unsigned ta
 			// }
       if (valor >= r) {
         selecionados[i] = populacao[individuo];
-        break;
+        // break;
+				valor = 0;
       }
     }
   }
@@ -358,7 +359,7 @@ int main(int argc, char const *argv[]) {
 
 			// Valor total da população
 			valorGeracao = valorTotalPopulacao(plantioAtual, plantioAnterior, NUMERO_TALHOES);
-			// printf("%d - %f\n", geracao, valorGeracao);
+			printf("%d - %f\n", geracao, valorGeracao);
 
 			//Condições de parada
 			if (geracao > LIMITE_GERACAO || valorGeracao > LIMITE_LUCRO )
